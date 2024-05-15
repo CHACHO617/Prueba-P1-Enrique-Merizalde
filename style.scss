@@ -1,0 +1,75 @@
+$backround-color: #fff;
+
+body {
+  background-color: $backround-color;
+  background-image: url(images/Decore.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 50%;
+}
+
+/*HEADER CSS 1440px*/
+
+.Navigation {
+  //border: solid red;
+  margin: 1% 6%;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 0.5% 1%;
+  align-items: center;
+
+  &__logo {
+    width: 100px;
+    height: auto;
+  }
+
+  &__options {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding: 0;
+    font-size: 17px;
+    font-family: sans-serif;
+    li,
+    button {
+      display: inline;
+      margin-left: 2%;
+      box-shadow: none;
+      background-color: transparent;
+      border-color: black;
+      border-radius: 5px;
+      padding: 1% 2%;
+      text-wrap: nowrap;
+      font-size: 17px;
+    }
+
+    .HamburgerMenu {
+      display: none;
+    }
+  }
+}
+
+/*HERO CSS 1440px*/
+
+.Hero {
+  //border: solid red;
+  margin: 1% 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0.5% 1%;
+  align-items: center;
+
+  &__text {
+  }
+
+  &__image {
+    display: inline;
+    //border: solid blue;
+    width: 110%;
+    height: auto;
+    margin-top: -5%;
+    margin-left: -10%;
+  }
+}

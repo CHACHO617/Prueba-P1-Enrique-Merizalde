@@ -39,6 +39,7 @@ body {
   padding: 1% 2%;
   text-wrap: nowrap;
   font-size: 17px;
+  font-weight: 550;
 }
 .Navigation__options .HamburgerMenu {
   display: none;

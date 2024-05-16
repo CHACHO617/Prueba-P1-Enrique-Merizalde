@@ -449,7 +449,37 @@ body {
   display: flex;
   flex-direction: wrap;
   padding: 0.5% 1%;
-  justify-content: space-between; /* Horizontally center the items */
+  justify-content: center; /* Horizontally center the items */
   align-items: center;
   border-radius: 129px 20px 20px 20px;
+  background-color: #dfd7f9;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    width: 60%;
+    padding: 3%;
+  }
+
+  &__InputButton {
+    display: flex;
+  }
+
+  &__input--empty {
+    width: 50%; /* Adjust width as needed */
+    padding: 3%; /* Adjust padding as needed */
+    border: none; /* Add a border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    font-size: 1rem; /* Adjust font size as needed */
+    margin-bottom: 10px; /* Adjust margin as needed */
+    box-sizing: border-box;
+  }
+
+  &__button--orange {
+    background-color: orange;
+    color: white;
+    margin-left: 3%;
+    padding-top: 0;
+  }
 }

@@ -47,11 +47,32 @@ body {
 
 /*HERO CSS 1440px*/
 .Hero {
+  border: solid red;
   margin: 1% 6%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 0.5% 1%;
   align-items: center;
+}
+.Hero__text h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 800;
+  margin-bottom: -7%;
+  color: #df6951;
+}
+.Hero__text h1 {
+  font-size: 80px;
+  margin-bottom: 0%;
+  border: solid red;
+}
+.Hero__text p {
+  font-size: 1rem;
+  width: 67%;
+  text-align: justify;
+  font-family: sans-serif;
+  margin-bottom: 3%;
 }
 .Hero__image {
   display: inline;
@@ -60,4 +81,32 @@ body {
   height: auto;
   margin-top: -5%;
   margin-left: -10%;
+}
+.Hero__buttons {
+  display: flex;
+}
+.Hero__btnPlacement {
+  display: flex;
+}
+.Hero__btn--primary {
+  background-color: orange;
+  color: white;
+  padding: 0% 4%;
+  height: 3rem;
+  border-radius: 10px;
+  border: none;
+  margin-right: 32px;
+  box-shadow: 0px 0px 16px rgba(255, 166, 0, 0.878); /* Add shadow */
+}
+.Hero__btn--icon {
+  background-color: #df6951;
+  color: white;
+  width: 3.4rem;
+  height: 3rem;
+  align-items: center;
+  border: none;
+  padding: auto;
+  border-radius: 100px;
+  margin-right: 16px;
+  box-shadow: 0px 0px 16px #df6951;
 }/*# sourceMappingURL=style.css.map */

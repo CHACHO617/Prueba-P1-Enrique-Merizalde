@@ -382,3 +382,74 @@ body {
     align-content: center;
   }
 }
+
+/*OPINIONS CSS 1440px*/
+.Opinions {
+  border: solid red;
+  margin: 5% 6%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5% 1%;
+  align-items: center;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h3 {
+      font-family: sans-serif;
+      font-size: 1.2rem;
+    }
+    h1 {
+      margin-top: 0%;
+      font-size: 3rem;
+      width: 80%;
+      margin-bottom: 15%;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    align-content: center;
+
+    img {
+      width: 90%;
+    }
+  }
+}
+
+/*PARTNETRS CSS 1440px*/
+
+.Partners {
+  border: solid red;
+  margin: 5% 6%;
+  display: flex;
+  flex-direction: wrap;
+  padding: 0.5% 1%;
+  justify-content: space-between; /* Horizontally center the items */
+  align-items: center;
+
+  img {
+    width: 100%;
+  }
+
+  &__Card--selected {
+    //border: solid black;
+    padding: 0.5% 2%;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  }
+}
+
+/*SUSCRIBE CSS 1440px*/
+.Subscribe {
+  border: solid red;
+  margin: 5% 6%;
+  display: flex;
+  flex-direction: wrap;
+  padding: 0.5% 1%;
+  justify-content: space-between; /* Horizontally center the items */
+  align-items: center;
+  border-radius: 129px 20px 20px 20px;
+}

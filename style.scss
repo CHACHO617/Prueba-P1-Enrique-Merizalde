@@ -1,4 +1,11 @@
 $backround-color: #fff;
+$mustard-color: #f1a501;
+$orangeRed-color: #df6951;
+$Hero-Text-color1: #181e4b;
+$Hero-Text-color2: #5e6282;
+$Services-Titles-color: #1e1d4c;
+$Purple-color: #f4f0fe;
+$Header-Text: #212832;
 
 body {
   background-color: $backround-color;
@@ -17,6 +24,7 @@ body {
   grid-template-columns: 1fr 4fr;
   padding: 0.5% 1%;
   align-items: center;
+  color: $Header-Text;
 
   &__logo {
     width: 100px;
@@ -38,7 +46,7 @@ body {
       margin-left: 2%;
       box-shadow: none;
       background-color: transparent;
-      border-color: black;
+      border-color: $Header-Text;
       border-radius: 5px;
       padding: 1% 2%;
       text-wrap: nowrap;
@@ -55,7 +63,7 @@ body {
 /*HERO CSS 1440px*/
 
 .Hero {
-  border: solid red;
+  //border: solid red;
   margin: 1% 6%;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -69,12 +77,13 @@ body {
       font-family: sans-serif;
       font-weight: 800;
       margin-bottom: -7%;
-      color: #df6951;
+      color: $orangeRed-color;
     }
     h1 {
       font-size: 84px;
       margin-bottom: 0%;
-      border: solid red;
+      //border: solid red;
+      color: $Hero-Text-color1;
     }
     p {
       font-size: 1rem;
@@ -82,12 +91,13 @@ body {
       text-align: justify;
       font-family: sans-serif;
       margin-bottom: 3%;
+      color: $Hero-Text-color2;
     }
   }
 
   &__image {
     display: inline;
-    border: solid blue;
+    //border: solid blue;
     width: 110%;
     height: auto;
     margin-top: -5%;
@@ -103,18 +113,18 @@ body {
   }
 
   &__btn--primary {
-    background-color: orange;
-    color: white;
+    background-color: $mustard-color;
+    color: $backround-color;
     padding: 0% 4%;
     height: 3rem;
     border-radius: 10px;
     border: none;
     margin-right: 32px;
-    box-shadow: 0px 0px 16px rgba(255, 166, 0, 0.878); /* Add shadow */
+    box-shadow: 0px 0px 16px rgba(255, 166, 0, 0.878);
   }
 
   &__btn--icon {
-    background-color: #df6951;
+    background-color: $orangeRed-color;
     color: white;
     width: 3.4rem;
     height: 3rem;
@@ -123,7 +133,7 @@ body {
     padding: auto;
     border-radius: 100px;
     margin-right: 16px;
-    box-shadow: 0px 0px 16px #df6951;
+    box-shadow: 0px 0px 16px $orangeRed-color;
   }
 }
 
@@ -131,7 +141,7 @@ body {
 
 .Services {
   position: relative;
-  border: solid red;
+  //border: solid red;
   margin: 5% 6%;
   display: flex;
   flex-direction: column;
@@ -149,11 +159,13 @@ body {
       font-family: sans-serif;
       text-transform: uppercase;
       margin-bottom: 0%;
+      color: $Hero-Text-color2;
     }
 
     h1 {
       margin-top: 2%;
       font-size: 3rem;
+      color: $Hero-Text-color1;
     }
   }
 
@@ -175,6 +187,7 @@ body {
     h2 {
       font-size: 1.3rem;
       font-family: sans-serif;
+      color: $Services-Titles-color;
     }
 
     p {
@@ -183,18 +196,19 @@ body {
       text-align: center;
       margin: 0% auto;
       text-align: center;
+      color: $Hero-Text-color2;
     }
   }
 
   &__dots {
     //border: solid green;
-    position: absolute; /* Set position to absolute */
-    top: -2%; /* Align to the top */
-    right: -1%; /* Align to the right */
-    width: 10%; /* Adjust width as needed */
-    height: auto; /* Adjust height as needed */
-    background-image: url("images/Dots.png"); /* Replace 'path/to/dots-image.png' with the actual path to your image */
-    background-size: cover; /* Adjust background size as needed */
+    position: absolute;
+    top: -2%;
+    right: -1%;
+    width: 10%;
+    height: auto;
+    background-image: url("images/Dots.png");
+    background-size: cover;
     z-index: 2;
   }
 
@@ -211,6 +225,7 @@ body {
     h2 {
       font-size: 1.3rem;
       font-family: sans-serif;
+      color: $Services-Titles-color;
     }
 
     p {
@@ -219,6 +234,7 @@ body {
       text-align: center;
       margin: 0% auto;
       text-align: center;
+      color: $Hero-Text-color2;
     }
   }
 
@@ -236,10 +252,9 @@ body {
 }
 
 /*DESTINATIONS CSS 1440px*/
-
 .Destinations {
   position: relative;
-  border: solid red;
+  //border: solid red;
   margin: 5% 6%;
   display: flex;
   flex-direction: column;
@@ -257,11 +272,13 @@ body {
       font-family: sans-serif;
       text-transform: uppercase;
       margin-bottom: 0%;
+      color: $Hero-Text-color2;
     }
 
     h1 {
       margin-top: 2%;
       font-size: 3rem;
+      color: $Hero-Text-color1;
     }
   }
 
@@ -271,8 +288,9 @@ body {
     flex-direction: wrap;
     max-width: 100%;
     justify-content: center;
-    gap: 0rem;
+    gap: 5rem;
     position: relative;
+    padding: 3%;
   }
 
   &__card {
@@ -280,7 +298,7 @@ body {
     //border: solid green;
     border-radius: 24px;
     margin: 2%;
-    background-color: white;
+    background-color: $backround-color;
     margin-bottom: 0%;
     padding-bottom: 2%;
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
@@ -295,6 +313,7 @@ body {
     h2 {
       font-size: 1.3rem;
       font-family: sans-serif;
+      color: $Hero-Text-color2;
     }
 
     p {
@@ -302,6 +321,7 @@ body {
       text-align: center;
       margin: 0% 5%;
       text-align: left;
+      color: $Hero-Text-color2;
     }
   }
 
@@ -335,9 +355,8 @@ body {
 }
 
 /*STEPS CSS 1440px*/
-
 .Steps {
-  border: solid red;
+  //border: solid red;
   margin: 1% 6%;
   display: flex;
   flex-direction: column;
@@ -351,10 +370,12 @@ body {
     h3 {
       font-family: sans-serif;
       font-size: 1.2rem;
+      color: $Hero-Text-color2;
     }
     h1 {
       margin-top: 0%;
       font-size: 3rem;
+      color: $Hero-Text-color1;
     }
   }
 
@@ -373,6 +394,13 @@ body {
 
     h3 {
       margin-bottom: -2%;
+      color: $Hero-Text-color2;
+      font-family: sans-serif;
+    }
+
+    p {
+      color: $Hero-Text-color2;
+      font-family: sans-serif;
     }
   }
 
@@ -385,7 +413,7 @@ body {
 
 /*OPINIONS CSS 1440px*/
 .Opinions {
-  border: solid red;
+  //border: solid red;
   margin: 5% 6%;
   display: flex;
   flex-direction: column;
@@ -399,12 +427,15 @@ body {
     h3 {
       font-family: sans-serif;
       font-size: 1.2rem;
+      text-transform: uppercase;
+      color: $Hero-Text-color2;
     }
     h1 {
       margin-top: 0%;
       font-size: 3rem;
       width: 80%;
       margin-bottom: 15%;
+      color: $Hero-Text-color1;
     }
   }
 
@@ -422,12 +453,12 @@ body {
 /*PARTNETRS CSS 1440px*/
 
 .Partners {
-  border: solid red;
+  //border: solid red;
   margin: 5% 6%;
   display: flex;
   flex-direction: wrap;
   padding: 0.5% 1%;
-  justify-content: space-between; /* Horizontally center the items */
+  justify-content: space-between;
   align-items: center;
 
   img {
@@ -444,42 +475,1233 @@ body {
 
 /*SUSCRIBE CSS 1440px*/
 .Subscribe {
-  border: solid red;
+  position: relative;
+  //border: solid red;
   margin: 5% 6%;
   display: flex;
   flex-direction: wrap;
   padding: 0.5% 1%;
-  justify-content: center; /* Horizontally center the items */
+  justify-content: center;
   align-items: center;
   border-radius: 129px 20px 20px 20px;
-  background-color: #dfd7f9;
+  background-color: $Purple-color;
 
   &__content {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
     width: 60%;
     padding: 3%;
+
+    h3 {
+      text-align: center;
+      font-family: sans-serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      padding-bottom: 5%;
+      color: $Hero-Text-color2;
+    }
   }
 
   &__InputButton {
     display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
   }
 
   &__input--empty {
-    width: 50%; /* Adjust width as needed */
-    padding: 3%; /* Adjust padding as needed */
-    border: none; /* Add a border */
-    border-radius: 5px; /* Add border radius for rounded corners */
-    font-size: 1rem; /* Adjust font size as needed */
-    margin-bottom: 10px; /* Adjust margin as needed */
+    width: 50%;
+    padding: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
     box-sizing: border-box;
+    background-image: url("images/Mail\ Icon.png");
+    background-position: 10px center;
+    background-position: 5% center;
+    background-repeat: no-repeat;
+    padding-left: 45px;
+    width: 50%;
+    padding: 3%;
+    text-indent: 2rem;
   }
 
   &__button--orange {
-    background-color: orange;
+    background-color: $orangeRed-color;
     color: white;
+    padding: 3% 7%;
+    border-radius: 8px;
+    border: none;
     margin-left: 3%;
-    padding-top: 0;
+    margin-bottom: 2%;
+  }
+
+  &__InputButton {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  &__circle-img {
+    position: absolute;
+    top: -10%;
+    right: -3%;
+    width: 6%;
+    height: auto;
+    border-radius: 50%;
+  }
+}
+
+/*FOOTER CSS 1440px*/
+.Footer {
+  //border: solid red;
+  margin: 5% 6%;
+  display: flex;
+  flex-direction: row;
+  padding: 0.5% 1%;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+
+  &__title {
+    width: 20%;
+    font-family: sans-serif;
+  }
+
+  ul {
+    font-family: sans-serif;
+    list-style-type: none;
+
+    h3 {
+      font-weight: 800;
+    }
+
+    li {
+      margin: 7% 0%;
+    }
+  }
+
+  &__socials {
+    width: 20%;
+    font-family: sans-serif;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+    img {
+      box-shadow: rgba(0, 0, 0, 0.553) 0px 18px 50px -10px;
+      border-radius: 100%;
+    }
+  }
+
+  &__socials1 {
+    img {
+      border-radius: 0;
+    }
+  }
+}
+
+/*MEDIA QUERY 1000px*/
+
+@media (max-width: 1000px) {
+  /*NAVIGATION CSS 1000px*/
+  .Navigation {
+    //border: solid red;
+    margin: 1% 6%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 0.5% 1%;
+    align-items: center;
+    color: $Header-Text;
+
+    &__logo {
+      width: 100px;
+      height: auto;
+    }
+
+    &__options {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      list-style-type: none;
+      padding: 0;
+      font-size: 17px;
+      font-family: sans-serif;
+      li,
+      button {
+        display: none;
+        margin-left: 2%;
+        box-shadow: none;
+        background-color: transparent;
+        border-color: $Header-Text;
+        border-radius: 5px;
+        padding: 1% 2%;
+        text-wrap: nowrap;
+        font-size: 17px;
+        font-weight: 550;
+      }
+
+      .HamburgerMenu {
+        display: inline;
+      }
+    }
+  }
+
+  /*HERO CSS 1000px*/
+  .Hero {
+    //border: solid rgb(0, 13, 255);
+    margin: 1% 6%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0.5% 1%;
+    align-items: center;
+
+    &__text {
+      h4 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: 800;
+        margin-bottom: -7%;
+        color: $orangeRed-color;
+      }
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 0%;
+        //border: solid red;
+        color: $Hero-Text-color1;
+      }
+      p {
+        font-size: 1rem;
+        width: 67%;
+        text-align: justify;
+        font-family: sans-serif;
+        margin-bottom: 3%;
+        color: $Hero-Text-color2;
+      }
+    }
+
+    &__image {
+      display: none;
+      border: solid blue;
+      width: 110%;
+      height: auto;
+      margin-top: -5%;
+      margin-left: -10%;
+    }
+
+    &__buttons {
+      display: flex;
+    }
+
+    &__btnPlacement {
+      display: flex;
+    }
+
+    &__btn--primary {
+      background-color: $mustard-color;
+      color: $backround-color;
+      padding: 0% 4%;
+      height: 3rem;
+      border-radius: 10px;
+      border: none;
+      margin-right: 32px;
+      box-shadow: 0px 0px 16px rgba(255, 166, 0, 0.878); /* Add shadow */
+    }
+
+    &__btn--icon {
+      background-color: $orangeRed-color;
+      color: white;
+      width: 3.4rem;
+      height: 3rem;
+      align-items: center;
+      border: none;
+      padding: auto;
+      border-radius: 100px;
+      margin-right: 16px;
+      box-shadow: 0px 0px 16px $orangeRed-color;
+    }
+  }
+
+  /*SERVICES CSS 1000px*/
+  .Services {
+    position: relative;
+    //border: solid red;
+    margin: 5% 6%;
+    display: flex;
+    flex-direction: wrap;
+    padding: 0.5% 1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+
+      h5 {
+        font-size: 1rem;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 0%;
+        color: $Hero-Text-color2;
+      }
+
+      h1 {
+        margin-top: 2%;
+        font-size: 3rem;
+        color: $Hero-Text-color1;
+      }
+    }
+
+    &__content {
+      width: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      flex-direction: 1fr 1fr;
+      max-width: 100%;
+      justify-content: center;
+      gap: 0rem;
+      position: relative;
+    }
+
+    &__card {
+      width: 100%;
+      text-align: center;
+      padding: 5% 3%;
+      margin-bottom: 5%;
+
+      h2 {
+        font-size: 1.3rem;
+        font-family: sans-serif;
+        color: $Services-Titles-color;
+      }
+
+      p {
+        font-family: sans-serif;
+        width: 70%;
+        text-align: center;
+        margin: 0% auto;
+        text-align: center;
+        color: $Hero-Text-color2;
+      }
+    }
+
+    &__dots {
+      //border: solid green;
+      position: absolute;
+      top: -2%;
+      right: -1%;
+      width: 10%;
+      height: auto;
+      background-image: url("images/Dots.png");
+      background-size: cover;
+      z-index: 2;
+    }
+
+    &__card--border {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 5% 1%;
+      //border: solid black;
+      border-radius: 36px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+      z-index: 1;
+      margin-bottom: 5%;
+
+      h2 {
+        font-size: 1.3rem;
+        font-family: sans-serif;
+        color: $Services-Titles-color;
+      }
+
+      p {
+        font-family: sans-serif;
+        width: 70%;
+        text-align: center;
+        margin: 0% auto;
+        text-align: center;
+        color: $Hero-Text-color2;
+      }
+    }
+
+    &__card--border-rectangle {
+      //border: solid green;
+      position: absolute;
+      bottom: -9%;
+      left: -14%;
+      width: 35%;
+      height: auto;
+      background-image: url("images/Rectangle\ Cut.png");
+
+      z-index: -10;
+    }
+  }
+
+  /*DESTINATIONS CSS 1000px*/
+  .Destinations {
+    position: relative;
+    //border: solid red;
+    margin: 5% 6%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5% 1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+
+      h5 {
+        font-size: 1rem;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 0%;
+        color: $Hero-Text-color2;
+      }
+
+      h1 {
+        margin-top: 2%;
+        font-size: 3rem;
+        color: $Hero-Text-color1;
+      }
+    }
+
+    &__content {
+      width: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 100%;
+      justify-content: center;
+      gap: 3rem;
+      position: relative;
+    }
+
+    &__card {
+      text-align: center;
+      //border: solid green;
+      border-radius: 24px;
+      margin: 2%;
+      background-color: $backround-color;
+      margin-bottom: 0%;
+      padding-bottom: 2%;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+
+      img {
+        width: 100%;
+        object-fit: fill;
+        height: auto;
+        border-radius: 24px;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        font-family: sans-serif;
+        color: $Hero-Text-color2;
+      }
+
+      p {
+        font-family: sans-serif;
+        text-align: center;
+        margin: 0% 5%;
+        text-align: left;
+        color: $Hero-Text-color2;
+      }
+    }
+
+    &__innerText {
+      margin-top: 7%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 10%;
+    }
+
+    &__innerText1 {
+      margin-top: 4%;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 0%;
+      margin-left: 5%;
+
+      img {
+        width: 1.5rem;
+        height: auto;
+      }
+    }
+  }
+
+  /*STEPS CSS 1000px*/
+  .Steps {
+    //border: solid red;
+    margin: 1% 6%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5% 10%;
+    align-items: center;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+
+      h3 {
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        color: $Hero-Text-color2;
+      }
+      h1 {
+        margin-top: 0%;
+        font-size: 3rem;
+        color: $Hero-Text-color1;
+      }
+
+      &__content1 {
+        width: 100%;
+      }
+    }
+
+    &__innerContent {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-width: 100%;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      padding: 0%;
+
+      img {
+        width: 10%;
+        height: 10%;
+        margin-right: 1.5rem;
+      }
+
+      h3 {
+        margin-bottom: -2%;
+        color: $Hero-Text-color2;
+        font-family: sans-serif;
+      }
+
+      p {
+        color: $Hero-Text-color2;
+        font-family: sans-serif;
+        width: 100%;
+      }
+    }
+
+    &__image {
+      width: 60%;
+      height: auto;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+      }
+    }
+  }
+
+  /*FOOTER CSS 1000px*/
+  .Footer {
+    //border: solid rgb(82, 253, 82);
+    margin: 5% 6%;
+    display: ruby-text;
+    padding: 0.5% 1%;
+
+    &__title {
+      width: 20%;
+      font-family: sans-serif;
+      display: initial;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      p {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+    ul {
+      font-family: sans-serif;
+      list-style-type: none;
+
+      h3 {
+        font-weight: 800;
+      }
+
+      li {
+        margin: 7% 0%;
+      }
+    }
+
+    &__socials {
+      width: 100%;
+      height: auto;
+      font-family: sans-serif;
+      display: ruby;
+      justify-content: center;
+
+      img {
+        box-shadow: rgba(0, 0, 0, 0.553) 0px 18px 50px -10px;
+        border-radius: 100%;
+      }
+    }
+
+    &__socials1 {
+      display: flex;
+
+      flex-direction: row;
+      img {
+        border-radius: 0;
+        width: 80%;
+      }
+    }
+  }
+}
+
+/*MEDIA QUERY 480px*/
+
+@media (max-width: 480px) {
+  /*NAVIGATION 480px*/
+  .Navigation {
+    //border: solid red;
+    margin: 1% 6%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 0.5% 1%;
+    align-items: center;
+    color: $Header-Text;
+
+    &__logo {
+      width: 75px;
+      height: auto;
+    }
+
+    &__options {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      list-style-type: none;
+      padding: 0;
+      font-size: 17px;
+      font-family: sans-serif;
+      li,
+      button {
+        display: none;
+        margin-left: 2%;
+        box-shadow: none;
+        background-color: transparent;
+        border-color: $Header-Text;
+        border-radius: 5px;
+        padding: 1% 2%;
+        text-wrap: nowrap;
+        font-size: 17px;
+        font-weight: 550;
+      }
+
+      .HamburgerMenu {
+        display: inline;
+        height: 25px;
+      }
+    }
+  }
+
+  /*HERO CSS 480px*/
+  .Hero {
+    //border: solid rgb(0, 13, 255);
+    margin: 1% 6%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0.5% 1%;
+    align-items: center;
+
+    &__text {
+      h4 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-family: sans-serif;
+        font-weight: 800;
+        margin-bottom: -7%;
+        color: $orangeRed-color;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0%;
+        //border: solid red;
+        color: $Hero-Text-color1;
+      }
+      p {
+        font-size: 1rem;
+        width: 100%;
+        text-align: justify;
+        font-family: sans-serif;
+        margin-bottom: 7%;
+        color: $Hero-Text-color2;
+      }
+    }
+
+    &__image {
+      display: none;
+      //border: solid blue;
+      width: 110%;
+      height: auto;
+      margin-top: -5%;
+      margin-left: -10%;
+    }
+
+    &__buttons {
+      display: flex;
+    }
+
+    &__btnPlacement {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__btn--primary {
+      background-color: $mustard-color;
+      color: $backround-color;
+      padding: 0% 4%;
+      height: 3rem;
+      border-radius: 10px;
+      border: none;
+      margin-right: 32px;
+      box-shadow: 0px 0px 16px rgba(255, 166, 0, 0.878);
+    }
+
+    &__btn--icon {
+      background-color: $orangeRed-color;
+      color: white;
+      width: 4rem;
+      height: 3rem;
+      align-items: center;
+      border: none;
+      padding: auto;
+      border-radius: 100px;
+      margin-right: 16px;
+      box-shadow: 0px 0px 16px $orangeRed-color;
+    }
+  }
+
+  /*SERVICES CSS 480px*/
+  .Services {
+    position: relative;
+    //border: solid red;
+    margin: 5% 6%;
+    display: flex;
+    flex-direction: wrap;
+    padding: 0.5% 1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+
+      h5 {
+        font-size: 1rem;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 0%;
+        color: $Hero-Text-color2;
+      }
+
+      h1 {
+        margin-top: 2%;
+        font-size: 2rem;
+        color: $Hero-Text-color1;
+      }
+    }
+
+    &__content {
+      width: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      justify-content: center;
+      gap: 0rem;
+      position: relative;
+    }
+
+    &__card {
+      width: 100%;
+      text-align: center;
+      padding: 5% 3%;
+      margin-bottom: 5%;
+
+      h2 {
+        font-size: 1.3rem;
+        font-family: sans-serif;
+        color: $Services-Titles-color;
+      }
+
+      p {
+        font-family: sans-serif;
+        width: 70%;
+        text-align: center;
+        margin: 0% auto;
+        text-align: center;
+        color: $Hero-Text-color2;
+        font-size: 1rem;
+      }
+    }
+
+    &__dots {
+      //border: solid green;
+      position: absolute;
+      top: -2%;
+      right: -1%;
+      width: 10%;
+      height: auto;
+      background-image: url("images/Dots.png");
+      background-size: cover;
+      z-index: 2;
+    }
+
+    &__card--border {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      padding: 5% 1%;
+      //border: solid black;
+      border-radius: 36px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+      z-index: 1;
+      margin-bottom: 5%;
+
+      h2 {
+        font-size: 1.3rem;
+        font-family: sans-serif;
+        color: $Services-Titles-color;
+      }
+
+      p {
+        font-family: sans-serif;
+        width: 70%;
+        text-align: center;
+        margin: 0% auto;
+        text-align: center;
+        color: $Hero-Text-color2;
+      }
+    }
+
+    &__card--border-rectangle {
+      //border: solid green;
+      position: absolute;
+      bottom: -9%;
+      left: -14%;
+      width: 35%;
+      height: auto;
+      background-image: url("images/Rectangle\ Cut.png");
+      z-index: -10;
+    }
+  }
+
+  /*DESTINATIONS CSS 480px*/
+  .Destinations {
+    position: relative;
+    //border: solid red;
+    margin: 5% 6%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5% 1%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &__title {
+      display: flex;
+      flex-direction: column;
+
+      h5 {
+        font-size: 1rem;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        margin-bottom: 0%;
+        color: $Hero-Text-color2;
+      }
+
+      h1 {
+        margin-top: 2%;
+        font-size: 2rem;
+        color: $Hero-Text-color1;
+      }
+    }
+
+    &__content {
+      width: auto;
+      display: grid;
+      grid-template-columns: 1fr;
+      max-width: 100%;
+      justify-content: center;
+      gap: 3rem;
+      position: relative;
+    }
+
+    &__card {
+      text-align: center;
+      //border: solid green;
+      border-radius: 24px;
+      margin: 2%;
+      background-color: $backround-color;
+      margin-bottom: 0%;
+      padding-bottom: 2%;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+
+      img {
+        width: 100%;
+        object-fit: fill;
+        height: auto;
+        border-radius: 24px;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+        font-family: sans-serif;
+        color: $Hero-Text-color2;
+      }
+
+      p {
+        font-family: sans-serif;
+        text-align: center;
+        margin: 0% 5%;
+        text-align: left;
+        color: $Hero-Text-color2;
+      }
+    }
+
+    &__innerText {
+      margin-top: 7%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 10%;
+    }
+
+    &__innerText1 {
+      margin-top: 4%;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-align: left;
+      margin-bottom: 0%;
+      margin-left: 5%;
+
+      img {
+        width: 1.5rem;
+        height: auto;
+      }
+    }
+  }
+
+  /*STEPS CSS 480px*/
+  .Steps {
+    //border: solid red;
+    margin: 1% 6%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5% 10%;
+    align-items: center;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+
+      h3 {
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        color: $Hero-Text-color2;
+      }
+      h1 {
+        margin-top: 0%;
+        font-size: 2rem;
+        color: $Hero-Text-color1;
+      }
+
+      &__content1 {
+        width: 100%;
+      }
+    }
+
+    &__innerContent {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      min-width: 100%;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      padding: 0%;
+
+      img {
+        width: 10%;
+        height: 10%;
+        margin-right: 1.5rem;
+      }
+
+      h3 {
+        margin-bottom: -2%;
+        color: $Hero-Text-color2;
+        font-family: sans-serif;
+      }
+
+      p {
+        color: $Hero-Text-color2;
+        font-family: sans-serif;
+        width: 100%;
+      }
+    }
+
+    &__image {
+      display: none;
+      width: 60%;
+      height: auto;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-content: center;
+      }
+    }
+  }
+
+  /*FOOTER CSS 480px*/
+  .Footer {
+    //border: solid rgb(82, 253, 82);
+    margin: 5% 6%;
+    display: ruby-text;
+    padding: 0.5% 1%;
+
+    &__title {
+      width: 20%;
+      font-family: sans-serif;
+      display: initial;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+
+      p {
+        width: 100%;
+        text-align: center;
+      }
+
+      img {
+        width: 20%;
+      }
+    }
+
+    ul {
+      font-family: sans-serif;
+      list-style-type: none;
+
+      h3 {
+        font-weight: 800;
+      }
+
+      li {
+        margin: 7% 0%;
+      }
+    }
+
+    &__socials {
+      width: 100%;
+      height: auto;
+      font-family: sans-serif;
+      display: ruby;
+      justify-content: center;
+
+      img {
+        box-shadow: rgba(0, 0, 0, 0.553) 0px 18px 50px -10px;
+        border-radius: 100%;
+      }
+    }
+
+    &__socials1 {
+      display: flex;
+
+      flex-direction: row;
+      img {
+        border-radius: 0;
+        width: 80%;
+      }
+    }
+  }
+
+  /*OPINIONS CSS 480px*/
+  .Opinions {
+    //border: solid red;
+    padding: 2% 9%;
+
+    &__dots1 {
+      display: none;
+    }
+
+    &__content {
+      display: grid;
+      max-width: 100%;
+      grid-template-columns: 1fr;
+
+      h3 {
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: $Hero-Text-color2;
+      }
+      h1 {
+        margin-top: 0%;
+        font-size: 2rem;
+        width: 80%;
+        margin-bottom: 15%;
+        color: $Hero-Text-color1;
+      }
+    }
+
+    &__image {
+      width: 100%;
+      height: auto;
+      margin: 0% auto;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        display: inline;
+        width: 90%;
+        justify-content: center;
+      }
+    }
+  }
+
+  /*PARTNERS CSS 480px*/
+  .Partners {
+    //border: solid rgb(0, 42, 254);
+    margin: 5% 6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0.5% 1%;
+
+    img {
+      width: 100%;
+      margin: 5%;
+    }
+
+    &__Card--selected {
+      //border: solid black;
+      padding: 0.5% 2%;
+      border-radius: 16px;
+      box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+    }
+  }
+
+  /*SUSCRIBE CSS 480px*/
+  .Subscribe {
+    position: relative;
+    //border: solid red;
+    margin: 5% 6%;
+    display: flex;
+    flex-direction: wrap;
+    padding: 0.5% 1%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 8px 8px 8px;
+    background-color: $Purple-color;
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      padding: 3%;
+
+      h3 {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+        padding-bottom: 5%;
+        color: $Hero-Text-color2;
+      }
+    }
+
+    &__InputButton {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      align-content: center;
+    }
+
+    &__input--empty {
+      width: 100%;
+      padding: 1%;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+      box-sizing: border-box;
+      background-image: url("images/Mail\ Icon.png");
+      background-position: 10px center;
+      background-position: 5% center;
+      background-repeat: no-repeat;
+      padding-left: 45px;
+      width: 100%;
+      padding: 3%;
+      text-indent: 2rem;
+    }
+
+    &__button--orange {
+      background-color: $orangeRed-color;
+      color: $backround-color;
+      padding: 3% 7%;
+      border-radius: 8px;
+      border: none;
+      margin-left: 3%;
+      margin-bottom: 2%;
+    }
+
+    &__InputButton {
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+    }
+
+    &__circle-img {
+      position: absolute;
+      top: -7%;
+      right: -5%;
+      width: 10%;
+      height: auto;
+      border-radius: 50%;
+    }
   }
 }
